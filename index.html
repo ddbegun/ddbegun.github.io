@@ -1,0 +1,45 @@
+{% extends "origin.html"%}
+
+{% block body%}
+<body background="/static/1237267.jpg" style="background-size: auto;">
+<h1 class="title" style="text-align: center;"> Wecome to Student Mannge System </h1>
+<div style="text-align: center;">
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+   Student Main
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  <a href="/givemessage" style="color: black;">点击添加留言</a>
+</button>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="title" id="offcanvasExampleLabel" style="color: antiquewhite;">Hi!</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="title" style="text-align: center;">
+      Content
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="color: whitesmoke">
+        点击下拉菜单
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/register" style="color:black; font-style: oblique;">体育项目注册</a></li>
+        <li><a class="dropdown-item" href="/aim" style="color: black;font-style: oblique;">制定学习项目</a></li>
+        <li><a class="dropdown-item" href="/note" style="color: black; font-style: oblique;">我的学习笔记</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="title" style="text-align: center;">2003.9.10</footer>
+</body>
+<figure>
+  <blockquote class="blockquote">
+    <p>这个网站只是为了学习使用，绝大多功能都是为了作者自己方便使用</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    这是作者的邮箱 <cite title="Source Title">dlnkvv28@gmail.com</cite>
+  </figcaption>
+</figure>
+{%endblock%}
